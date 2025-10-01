@@ -1,73 +1,42 @@
-# React + TypeScript + Vite
+<h1 align="center">🚀 React Starter Template</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p align="center">
+  <strong>A modern React 18 + TypeScript starter kit with Vite, Tailwind v4, HeroUI, Redux Toolkit, React Router v6, and Framer Motion.</strong><br/>
+  Build and ship beautiful apps faster.
+</p>
 
-Currently, two official plugins are available:
+<p align="center">
+  <a href="https://react.dev/">React 18</a> •
+  <a href="https://www.typescriptlang.org/">TypeScript</a> •
+  <a href="https://vitejs.dev/">Vite</a> •
+  <a href="https://tailwindcss.com/">TailwindCSS v4</a> •
+  <a href="https://heroui.com/">HeroUI</a> •
+  <a href="https://redux-toolkit.js.org/">Redux Toolkit</a> •
+  <a href="https://reactrouter.com/">React Router v6</a> •
+  <a href="https://www.framer.com/motion/">Framer Motion</a>
+</p>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- ⚛️ **React 18 + TypeScript** – strongly typed, modern React setup  
+- ⚡ **Vite** – lightning-fast build tool with HMR  
+- 🎨 **TailwindCSS v4** – utility-first styling (zero-config ready)  
+- 🧩 **HeroUI v2.8** – 210+ polished UI components  
+- 🛠 **Redux Toolkit** – predictable, simple state management  
+- 🧭 **React Router v6** – modern routing system  
+- 🎬 **Framer Motion** – animations made easy  
+- 🌗 Dark mode ready  
+- 📂 Clean project structure with path aliases  
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 📦 Installation
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Clone the repo and install dependencies:
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+```bash
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
+npm install
